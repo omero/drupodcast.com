@@ -285,7 +285,6 @@ $config_directories = array();
  *   $settings['hash_salt'] = file_get_contents('/home/example/salt.txt');
  * @endcode
  */
-$settings['hash_salt'] = 'zbwXd94_PJlSKxYg0zE73pwqZ4lzHPq1cKYdt_vB8Fsj4BKYSKfu-MZgJOw0m4zjK23yJ8GwSg';
 
 /**
  * Deployment identifier.
@@ -761,11 +760,13 @@ if (file_exists(dirname(DRUPAL_ROOT) . '/.env')) {
 # Load environment
 $env = getenv('ENVIRONMENT');
 
-//# Load and set key/value settings
+# Load and set key/value settings
 //foreach ($_ENV as $name => $value) {
-//    if (strlen($name)>9 && substr($name, 0, 9) === 'SETTINGS_') {
+//    if (substr($name, 0, 9) === 'SETTINGS_') {
 //        $key = strtolower(substr($name, 9));
-//        $settings[$key] = $value;
+//        if (!isset($settings[$key])) {
+//            $settings[$key] = $value;
+//        }
 //    }
 //}
 
@@ -797,3 +798,4 @@ $databases['default']['default'] = array (
 );
 
 $settings['install_profile'] = 'standard';
+$settings['hash_salt'] = getenv('HASH_SALT');

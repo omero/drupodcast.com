@@ -1,0 +1,15 @@
+command:
+  name: build:local
+  description: 'Build local development site'
+commands:
+  # Install site
+  - command: site:install
+    options:
+      force: true
+      uri: 'http://default'
+    arguments:
+      profile: standard
+  # Cache clear
+  - command: 'cache:rebuild'
+    arguments:
+        cache: all

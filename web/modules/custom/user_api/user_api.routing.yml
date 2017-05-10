@@ -1,0 +1,16 @@
+
+user_api.users:
+  path: '/api/users'
+  defaults:
+    _controller: '\Drupal\user_api\Controller\UserController::users'
+    _title: 'Users'
+  requirements:
+    _permission: 'access content'
+
+user_api.user:
+  path: '/api/user/{email}'
+  defaults:
+    _controller: '\Drupal\user_api\Controller\UserController::user'
+    _title: 'Users'
+  requirements:
+    _permission: 'access content'

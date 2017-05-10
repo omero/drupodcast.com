@@ -1,0 +1,5 @@
+name: user_api
+type: module
+description: User API
+core: 8.x
+package: Custom

@@ -1,0 +1,37 @@
+[
+  {
+    "id": "58f126ad992585d642616da0",
+    "isActive": true,
+    "email": "jesus.olivas@gmail.com"
+  },
+  {
+    "id": "58f126ad25ffac11ce532669",
+    "isActive": true,
+    "email": "omersguchigu@gmail.com"
+  },
+  {
+    "id": "58f126adbfdaadfef3dc8e8e",
+    "isActive": true,
+    "email": "kabarca@weknowinc.com"
+  },
+  {
+    "id": "58f126adb96151b313ffff70",
+    "isActive": false,
+    "email": "enzo@weknowinc.com"
+  },
+  {
+    "id": "58f126ad60218a0dc5784166",
+    "isActive": true,
+    "email": "lorem@ipsum.com"
+  },
+  {
+    "id": "58f126ad4de83c20da56dcf9",
+    "isActive": false,
+    "email": "hello@weknowinc.com"
+  },
+  {
+    "id": "58f126ade0adddc4e2e3bd35",
+    "isActive": true,
+    "email": "yes@weknowinc.com"
+  }
+]

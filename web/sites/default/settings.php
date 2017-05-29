@@ -799,3 +799,4 @@ $databases['default']['default'] = array (
 
 $settings['install_profile'] = 'standard';
 $settings['hash_salt'] = getenv('HASH_SALT');
+

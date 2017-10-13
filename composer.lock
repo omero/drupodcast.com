@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "eb597c0f63a94c611ba3f3e5b663ee08",
+    "content-hash": "e714df5b28601a1b7a575ac6e92cf387",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1129,6 +1129,11 @@
                 "bin/drupal"
             ],
             "type": "library",
+            "extra": {
+                "patches_applied": {
+                    "[update:execute] Warn and return 0 if there are no pending updates": "https://patch-diff.githubusercontent.com/raw/hechoendrupal/drupal-console/pull/3518.patch"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Drupal\\Console\\": "src"

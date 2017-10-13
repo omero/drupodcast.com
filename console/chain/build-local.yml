@@ -10,6 +10,7 @@ commands:
     arguments:
       profile: standard
   # Cache clear
+  - command: 'update:execute'
   - command: 'cache:rebuild'
     arguments:
         cache: all

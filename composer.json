@@ -71,6 +71,12 @@
             "web/profiles/contrib/{$name}": ["type:drupal-profile"],
             "web/themes/contrib/{$name}": ["type:drupal-theme"],
             "drush/contrib/{$name}": ["type:drupal-drush"]
+        },
+        "enable-patching": true,
+        "patches": {
+            "drupal/console": {
+                "[update:execute] Warn and return 0 if there are no pending updates": "https://patch-diff.githubusercontent.com/raw/hechoendrupal/drupal-console/pull/3518.patch"
+            }
         }
     }
 }
